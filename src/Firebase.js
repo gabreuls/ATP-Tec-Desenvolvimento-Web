@@ -3,12 +3,12 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAGz8nNAkac2ISTSIw-mdBNohsZc-MkAXk",
-  authDomain: "projetoatpweb.firebaseapp.com",
-  projectId: "projetoatpweb",
-  storageBucket: "projetoatpweb.firebasestorage.app",
-  messagingSenderId: "29606948821",
-  appId: "1:29606948821:web:7ee92a841b2ece7a1a575c"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
 if(!firebase.apps.length) {
